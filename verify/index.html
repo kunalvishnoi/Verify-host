@@ -146,6 +146,13 @@
   function checkFunction() {
     
   var token = document.getElementById('token').value;
+	    if(token.length === 6) {
+    token = '00' + token;
+  }
+    
+   if(token.length === 7) {
+    token = '0' + token;
+  }
 
 
 const data = { key: token };
