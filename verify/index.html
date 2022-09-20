@@ -167,7 +167,7 @@ fetch('https://keys-generator.herokuapp.com/api/productG/verify', {
 .then(response => response.json())
 .then(data => {
   if(data.success) {
-    document.getElementById("message").innerHTML = "This Product is Genuine. Thanks for being a valuable customer of Advance Muscle Pump Nutition"
+    document.getElementById("message").innerHTML = "This Product is Genuine."
   }
   else {
     document.getElementById("message").innerHTML = "This Product is Not Genuine."
